@@ -7,8 +7,10 @@
 Before you get started, you will need a Unity project with Zenject installed. Beamable must also be installed. 
 In the Unity Package Manager, [add a package via git-link](https://docs.unity3d.com/Manual/upm-ui-giturl.html). for com.beamable.solana and use the following git-link.
 
-https://github.com/beamable/BeamableZenject.git?path=/Packages/com.beamable.zenject#1.0.0
+https://github.com/beamable/BeamableZenject.git?path=/Packages/com.beamable.zenject#latest
+
 Note: the end of the link includes the version number. You view the available versions by looking at this repositories git tags.
+The link above will install the latest deployed package, but if you wish to pin to a specific version, you replace "latest" with any of the available [tags.](https://github.com/beamable/BeamableZenject/tags)
 
 Using UPM, import the demo project to see Zenject in action.
 
