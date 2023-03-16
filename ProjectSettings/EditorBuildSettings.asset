@@ -4,6 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Packages/com.beamable.zenject/Samples/ZenjectExample/ExampleScene.unity
+    guid: 29f74215ff0ba4142ab80e087048d18f
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 9d9b2c20d229a4936836de2b952cc769, type: 2}
