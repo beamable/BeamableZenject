@@ -45,7 +45,7 @@ public class ZenjectExampleBehaviour : MonoBehaviour
     {
         dbidLabel.text = $"DBID: (loading)";
         
-        // only need this because I don't have a "loading scene"
+        // only need this because the sample doesn't have a loading scene.
         await ctx.OnReady; // I wish we could enforce this timing into the Zenject cycle :/ 
 
         dbidLabel.text = $"DBID: {ctx.PlayerId}";
