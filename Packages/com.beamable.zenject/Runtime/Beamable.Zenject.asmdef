@@ -1,0 +1,9 @@
+{
+  "name": "Beamable.Zenject",
+  "autoReferenced": true,
+  "references": [
+    "Zenject",
+    "Unity.Beamable.Runtime.Common",
+    "Unity.Beamable"
+  ]
+}

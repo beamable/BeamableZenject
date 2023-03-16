@@ -1,0 +1,8 @@
+{
+    "cid": "1338004997867618",
+    "alias": "chris-test-2",
+    "pid": "DE_1338004997867621",
+    "platform": "",
+    "socket": "",
+    "containerPrefix": ""
+}

@@ -1,0 +1,24 @@
+{
+    "name": "com.beamable.zenject",
+    "version": "0.1.1",
+    "displayName": "Beamable Zenject",
+    "description": "Integrate Zenject with Beamable.",
+    "unity": "2021.3",
+    "keywords": [
+      "beamable",
+      "zenject"
+    ],
+    "author": "Beamable <info@beamable.com> (https://www.beamable.com)",
+    "license": "ISC",
+    "dependencies": {
+
+    },
+    "samples": [
+      {
+        "displayName": "Demo",
+        "description": "Example showing Beamable being used via Zenject",
+        "path": "Samples~/ZenjectExample"
+      }
+    ]
+  }
+  
