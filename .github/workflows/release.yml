@@ -57,8 +57,11 @@ jobs:
           git commit -a -m "bundling code for release $VERSION"
           git status
           git tag -d $VERSION || true
+          git tag -d latest || true
           git push --delete origin $VERSION || true
+          git push --delete origin latest || true
           git tag -a $VERSION -m "release $VERSION"
+          git tag -a leatest -m "release latest"
           git tag
           git describe
           git push --tags

@@ -63,7 +63,6 @@ jobs:
       fail-fast: false
       matrix:
         targetPlatform:
-          - WebGL
           - Android
           - StandaloneOSX
         unityVersion:
