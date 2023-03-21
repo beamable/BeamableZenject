@@ -24,7 +24,7 @@ Container.BindBeamableContext(ctx);
 
 There is a scriptable object installer called `BeamableInstaller` available that will automatically install a `BeamContext` into a Zenject container. This is how the sample works.
 
-Once Beamable has been installed in a Zenject container, any of the Beamable services registered through Beamable's internal DI system can be accessed with Zenject's injection, via the `[Zenject]` attribute, or through construction. 
+Once Beamable has been installed in a Zenject container, any of the Beamable services registered through Beamable's internal DI system can be accessed with Zenject's injection, via the `[Inject]` attribute, or through construction. 
 
 Look at the `ZenjectExampleBehaviour` for an example. Here is an except.
 ```csharp
