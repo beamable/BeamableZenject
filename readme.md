@@ -7,8 +7,10 @@
 Before you get started, you will need a Unity project with Zenject installed. Beamable must also be installed. 
 In the Unity Package Manager, [add a package via git-link](https://docs.unity3d.com/Manual/upm-ui-giturl.html). for com.beamable.solana and use the following git-link.
 
-https://github.com/beamable/BeamableZenject.git?path=/Packages/com.beamable.zenject#1.0.0
+https://github.com/beamable/BeamableZenject.git?path=/Packages/com.beamable.zenject#latest
+
 Note: the end of the link includes the version number. You view the available versions by looking at this repositories git tags.
+The link above will install the latest deployed package, but if you wish to pin to a specific version, you replace "latest" with any of the available [tags.](https://github.com/beamable/BeamableZenject/tags)
 
 Using UPM, import the demo project to see Zenject in action.
 
@@ -22,7 +24,7 @@ Container.BindBeamableContext(ctx);
 
 There is a scriptable object installer called `BeamableInstaller` available that will automatically install a `BeamContext` into a Zenject container. This is how the sample works.
 
-Once Beamable has been installed in a Zenject container, any of the Beamable services registered through Beamable's internal DI system can be accessed with Zenject's injection, via the `[Zenject]` attribute, or through construction. 
+Once Beamable has been installed in a Zenject container, any of the Beamable services registered through Beamable's internal DI system can be accessed with Zenject's injection, via the `[Inject]` attribute, or through construction. 
 
 Look at the `ZenjectExampleBehaviour` for an example. Here is an except.
 ```csharp
@@ -43,7 +45,7 @@ public class ZenjectExampleBehaviour : MonoBehaviour
     {
         dbidLabel.text = $"DBID: (loading)";
         
-        // only need this because I don't have a "loading scene"
+        // only need this because the sample doesn't have a loading scene.
         await ctx.OnReady; // I wish we could enforce this timing into the Zenject cycle :/ 
 
         dbidLabel.text = $"DBID: {ctx.PlayerId}";
